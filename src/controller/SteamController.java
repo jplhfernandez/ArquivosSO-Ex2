@@ -15,7 +15,7 @@ public class SteamController implements ISteamController{
 
     @Override
     public void readFile(String ano, String mes, double media) throws IOException {
-        File arq = new File("C:/Users/João/Downloads/SteamCharts.csv");
+        File arq = new File("D:/Downloads/SteamCharts.csv");
 
         if (arq.isFile() && arq.exists())
         {
@@ -46,7 +46,7 @@ public class SteamController implements ISteamController{
 
     @Override
     public void createFile(String path, String name, String ano, String mes) throws IOException {
-        File arq = new File("C:/Users/João/Downloads/SteamCharts.csv");
+        File arq = new File("D:/Downloads/SteamCharts.csv");
         File arq_criado = new File(path, name + ".csv");
         if (arq_criado.exists())
         {
@@ -82,7 +82,5 @@ public class SteamController implements ISteamController{
                 throw new IOException("arquivo invalidado");
             }
         }
-
-
     }
 }
